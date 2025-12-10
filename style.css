@@ -1,0 +1,195 @@
+﻿/* =======================
+   General
+======================= */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =======================
+   Header
+======================= */
+header {
+    height: 150px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.warp {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1 {
+    font-size: 20px;
+}
+.logo img {
+    height: 80px;
+    width: 80;
+    margin-right: 15px;
+}
+
+.text {
+    display: flex;
+    gap: 20px;
+}
+
+    .text a {
+        color: white;
+        font-weight: 500;
+    }
+
+        .text a:hover {
+            text-decoration: underline;
+        }
+
+/* =======================
+   Main Container
+======================= */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Headings */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* =======================
+   Video Section
+======================= */
+.video-wrapper {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+    .video-wrapper iframe,
+    .video-wrapper video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+.section-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+/* =======================
+   Images
+======================= */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* =======================
+   About Page Layout
+======================= */
+.about-container {
+    display: flex;
+    justify-content: flex-start; /* keep items left-to-right */
+    align-items: flex-start; /* align top edges */
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 40px;
+    flex-wrap: nowrap; /* prevent text from dropping under image */
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: #fff;
+}
+
+.about-image {
+    width: 40%; /* slightly smaller to leave more space for text */
+}
+
+.about-text {
+    padding: 75px 0;
+    width: 55%; /* slightly bigger for text */
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.about-text h1 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+
+/* =======================
+   Footer
+======================= */
+footer {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}
+
+    footer .warp1 {
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+        footer .warp1 a {
+            color: white;
+            margin-right: 15px;
+        }
+
+            footer .warp1 a:hover {
+                text-decoration: underline;
+            }
+
+    footer .tagline p {
+        font-weight: bold;
+        font-style: italic;
+    }
