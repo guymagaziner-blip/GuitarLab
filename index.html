@@ -1,18 +1,16 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>GuitarLab</title>
-    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>GuitarLab - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/red.png') no-repeat center center; background-size: cover; color: white; padding: 60px 0;">
         <div class="warp">
             <div class="logo">
                 <h1>Welcome to GuitarLab</h1>
-                <img src="img/white_on_trans.png" alt="Alternate Text" />
+                <img src="img/white_on_trans.png" alt="GuitarLab Logo" />
             </div>
             <nav class="text">
                 <a href="index.html">Home</a>
@@ -21,18 +19,54 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="songs.html">Songs</a>
-        </nav>
+        <!-- Section for featured items -->
+        <section>
+            <div class="containerInHomePage">
+                <div class="home-item">
+                    <img src="img/tunapark.png" alt="Song 1 Thumbnail">
+                    <div class="content">
+                        <h3>בסיבוב</h3>
+                        <p>Learn the chords and riffs for Song 1 in minutes!</p>
+                        <a href="songs.html">Watch Video</a>
+                        <button onclick="alert('Liked Song 1!')">Like 👍</button>
+                        <p class="info">📅 02/02/2026 | 👁️ 150 views</p>
+                    </div>
+                </div>
+
+
+                <div class="home-item">
+                    <img src="img/ravid.jpg" alt="Song 1 Thumbnail">
+                    <div class="content">
+                        <h3>קפה וסיגריה</h3>
+                        <p>Learn the chords and riffs for Song 1 in minutes!</p>
+                        <a href="songs.html">Watch Video</a>
+                        <button onclick="alert('Liked Song 1!')">Like 👍</button>
+                        <p class="info">📅 02/02/2026 | 👁️ 150 views</p>
+                    </div>
+                </div>
+
+                <div class="home-item">
+                    <img src="img/paer.png" alt="Song 1 Thumbnail">
+                    <div class="content">
+                        <h3>עוף מוזר</h3>
+                        <p>Learn the chords and riffs for Song 1 in minutes!</p>
+                        <a href="songs.html">Watch Video</a>
+                        <button onclick="alert('Liked Song 1!')">Like 👍</button>
+                        <p class="info">📅 02/02/2026 | 👁️ 150 views</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
+
     <footer>
         <div class="links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="content.html">Songs</a>
+            <a href="songs.html">Songs</a>
         </div>
 
         <div class="socials">
@@ -53,7 +87,6 @@
         <div class="tagline">
             🎸 Rock Bottom | © 2025 GuitarLab
         </div>
-
         <div class="logo">
             <img src="img/logo.png" alt="Logo">
         </div>
