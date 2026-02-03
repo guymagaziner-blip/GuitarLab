@@ -139,9 +139,6 @@ h2 {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* =======================
-   About Page Layout
-======================= */
 .about-container {
     display: flex;
     justify-content: flex-start; /* keep items left-to-right */
@@ -298,3 +295,59 @@ footer {
             color: #fff;
             cursor: pointer;
         }
+section {
+    margin-bottom: 100px; /* מרווח בין כל section */
+}
+
+#services {
+    padding: 80px 0;
+    margin-top: 80px;
+    background: transparent; /* ❌ בלי רקע */
+}
+
+/* ===== SERVICES FLEX ===== */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* יותר רווח בין הקוביות */
+
+    max-width: 1300px; /* מאפשר קוביות גדולות יותר */
+    margin: 0 auto;
+}
+
+/* ===== BIGGER BOXES ===== */
+.container_service {
+    width: calc(33.333% - 40px); /* עדיין 3 בשורה */
+    min-width: 340px; /* קוביות גדולות יותר */
+
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+    .container_service:hover {
+        transform: translateY(-10px);
+    }
+
+    /* ICON */
+    .container_service img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+
+    /* TEXT */
+    .container_service h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .container_service p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
