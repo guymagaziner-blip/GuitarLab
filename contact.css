@@ -75,15 +75,19 @@ header {
     align-items: center;
 }
 .text a {
-        color: white;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-.text a:hover {
-            text-decoration: underline;
+    color: white; /* default white */
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s, transform 0.2s, text-shadow 0.3s;
 }
 
+.text a:hover {
+    color: #ffc870; /* warm orange */
+    border-bottom: 2px solid #ffc870;
+    transform: translateY(-3px) scale(1.05);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5), 0 0 6px #ffc870; /* soft glow */
+}
 
 .warp {
     width: 90%;
@@ -114,15 +118,21 @@ footer {
     font-family: Arial, sans-serif;
 }
 
-    footer .links a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-    }
+footer .links a {
+    color: white; 
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block; 
+    transition: color 0.3s, transform 0.2s, text-shadow 0.3s;
+}
 
-        footer .links a:hover {
-            text-decoration: underline;
-        }
+footer .links a:hover {
+    color:  #ffc870; 
+    text-decoration: underline;
+    transform: translateY(-3px) scale(1.05); 
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
 
     footer .socials {
         margin: 15px 0;
